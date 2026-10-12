@@ -45,6 +45,7 @@ body {
     height: 138vw;
 }
 
+
 @media screen and (max-aspect-ratio: 1/1)  {
     body {
         background-size: 190%;
