@@ -8,6 +8,20 @@
 
 }
 
+
+
+
+.logo-wrapper {
+    border: 1px solid black;
+    height: 20vw;
+}
+
+.calendar-warpper {
+    border: 1px solid black;
+    height: 21vw;
+}
+
+
 body {
 
     background-image: url("/zgubioneplatki/img/webbgtest@0.5.png");
@@ -17,4 +31,39 @@ body {
     background-position: center 0;
     background-attachment: scroll;
 
+
+    margin: 0;
+    /*height: 100%;*/
+
 }
+
+.wrapper {
+
+    padding: 0;
+    border-style: solid;
+    width: 100%;
+    height: 138vw;
+}
+
+@media screen and (max-width: 720px)  {
+    body {
+        background-size: 190%;
+    }
+    .wrapper {
+        height: 263vw;
+    }
+    .logo {
+        width: 65%
+    }
+
+    .logo-wrapper {
+        height: 39vw
+    }
+    .calendar-warpper {
+        height: 40vw
+    }
+
+}
+
+
+
