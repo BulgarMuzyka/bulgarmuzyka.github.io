@@ -49,7 +49,7 @@ body {
 @media screen and (max-aspect-ratio: 1/1)  {
     body {
         background-size: 190%;
-        background: black;
+        background: blue;
     }
     .wrapper {
         height: 263vw;
