@@ -13,6 +13,6 @@ body {
     background-image: url("/zgubioneplatki/img/webbgtest@0.5.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
 
 }
