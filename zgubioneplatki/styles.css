@@ -12,8 +12,9 @@ body {
 
     background-image: url("/zgubioneplatki/img/webbgtest@0.5.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    /*background-attachment: fixed;*/
+    background-size: 100%;
+    background-position: center top;
+    background-attachment: scroll;
 
 }
