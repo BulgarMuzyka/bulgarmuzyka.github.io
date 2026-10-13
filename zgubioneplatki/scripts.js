@@ -1,20 +1,33 @@
-function dayPopup( buttonId ) {
-    console.log("CLICK " + buttonId);
+const popupTitles = {
+    'first-day': 'Dzień pierwszy: Oryginalna wersja',
+    'second-day': 'Dzień drugi: Nuty do Zgubionych Płatków',
+    'third-day': 'Dzień trzeci: Highlighty z urodzinowego streama',
+    'fourth-day': 'Dzień czwarty: Nagranie z koncertu',
+    'fifth-day': 'Dzień piąty: Oficjalny Minecraft discpack',
 
-    let popup = document.getElementById("popup");
+}
+
+function dayPopup( ) {
+
+    console.log(event.target.id)
+    if ( event.target.className === "padlock" ) return
+
+    let dayId = event.target.id
+    let popup_title = document.getElementById('popup-title')
+    popup_title.innerText = popupTitles[dayId] ?? "undefined"
+
+    let popup = document.getElementById("popup-window");
     popup.style.display = "block";
+    let popup_tint = document.getElementById("popup-tint");
+    popup_tint.style.display = "block";
 }
 
 function hidePopup( ) {
 
-    console.log("CLICK outside of popup");
-    console.log(event.target)
-    if (event.target.id === "popup") {
-        let popup = document.getElementById("popup");
-        if (popup.style.display !== "none") {
-            popup.style.display = "none";
-        }
-    }
+    let popup = document.getElementById("popup-window");
+    popup.style.display = "none";
+    let popup_tint = document.getElementById("popup-tint");
+    popup_tint.style.display = "none";
 }
 
 function showPopup( buttonId ) {

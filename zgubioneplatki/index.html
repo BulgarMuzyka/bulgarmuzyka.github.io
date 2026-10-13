@@ -4,31 +4,45 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="popup-styles.css">
+    <link rel="stylesheet" href="calendar-styles.css">
     <title>X rocznica Zgubionych Płatków</title>
     <script src="scripts.js"></script>
 
 </head>
 
-<body onclick="hidePopup()">
+<body>
 
-    <div class="wrapper">
+    <div id="popup-wrapper">
+        <div id="popup-tint" class="full-page-area" onclick="hidePopup()">
+
+        </div>
+        <div id="popup-window">
+            <div id="popup-content">
+                <p id="popup-title">test</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main-wrapper" class="full-page-area">
 
         <div class="logo-wrapper">
             <img src="/zgubioneplatki/img/platki_rocznica_logo.png" alt="Platki Logo" class="logo" />
         </div>
 
-        <div id="popup">
 
-        </div>
+
+
 
         <div class="calendar-wrapper">
 
             <div class="calendar-row first-row">
 
-                <div id="first-day" class="calendar-day" onclick="dayPopup('first-day')"></div>
-                <div class="calendar-day"></div>
-                <div class="calendar-day"></div>
-                <div class="calendar-day">
+                <div id="first-day" class="calendar-day" onclick="dayPopup()"></div>
+                <div id="second-day" class="calendar-day" onclick="dayPopup()"></div>
+                <div id="third-day" class="calendar-day" onclick="dayPopup()"></div>
+                <div id="fourth-day" class="calendar-day" onclick="dayPopup()">
                     <img class="day-sprite" src="https://cdn.modrinth.com/data/c407Mpoh/4ea132e21e8d239fa1e3f62d82942a9448c75440.png"/>
                     <img class="padlock" src="https://png.pngtree.com/png-clipart/20240328/original/pngtree-home-padlock-security-png-image_14701273.png" />
                 </div>
@@ -40,9 +54,9 @@
 
             <div class="calendar-row second-row">
 
-                <div class="calendar-day"></div>
-                <div class="calendar-day"></div>
-                <div class="calendar-day"></div>
+                <div id="fifth-day" class="calendar-day" onclick="dayPopup()"></div>
+                <div id="sixth-day" class="calendar-day" onclick="dayPopup()"></div>
+                <div id="seventh-day" class="calendar-day" onclick="dayPopup()"></div>
 
             </div>
 

@@ -1,0 +1,85 @@
+.calendar-warpper {
+    border: 1px solid black;
+    height: auto;
+}
+
+
+/* Calendar rows */
+.calendar-row {
+    border: 1px solid black;
+    /*opacity: 20%;*/
+    opacity: 30%;
+    height: 10vw;
+    background: black;
+
+    align-items: center;
+    justify-content: center;
+
+
+    display: flex;
+
+}
+.calendar-divider {
+    height: 2vw;
+}
+
+
+/* Calendar rows specific */
+.first-row {
+    gap: 3.8vw;
+    margin-right: 1vw;
+}
+.second-row {
+    gap: 3.8vw;
+    margin-right: 1vw;
+}
+
+
+/* Day sprites */
+.calendar-day {
+    border: 1px solid black;
+
+    background: red;
+    width: 10vw;
+    height: 10vw;
+}
+.padlock {
+    margin-top: -10vw;
+}
+.calendar-day > * {
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/* Mobile versions */
+@media screen and (max-aspect-ratio: 1/1)  {
+
+    .calendar-warpper {
+        height: 40vw
+    }
+
+
+
+    .calendar-row {
+        height: 18vw;
+        gap: 8.1vw;
+    }
+    .calendar-divider {
+        height: 5vw;
+
+    }
+
+
+
+    .calendar-day {
+        height: 18vw;
+        width: 18vw;
+    }
+    .padlock {
+        margin-top: -18vw;
+    }
+
+}

@@ -1,0 +1,65 @@
+#popup-window {
+    position: fixed;
+    z-index: 4;
+
+    width: 50vw;
+    height: 50vh;
+    min-height: 40vw;
+    min-width: 40vw;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    display: none;
+
+    /*background: red;*/
+    background: url("./img/platki popup bg.png") ;
+    background-size: cover;
+    border: 3px solid black;
+}
+
+#popup-tint {
+    position: absolute;
+    background: black;
+    opacity: 0.7;
+    z-index: 3;
+    display: none;
+}
+
+#popup-content {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+#popup-title {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    font-size: 2.6vw;
+    font-weight: bold;
+
+}
+
+@media screen and (max-aspect-ratio: 1/1)  {
+    #popup-window {
+        width: 80vw;
+        height: 90vh;
+        min-height: 20vw;
+        min-width: 20vw;
+        max-height: 130vw;
+    }
+
+    #popup-title {
+        top: 10px;
+        font-size: 5vw;
+    }
+}
