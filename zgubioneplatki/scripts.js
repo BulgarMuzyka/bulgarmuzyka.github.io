@@ -10,7 +10,7 @@ const popupTitles = {
 function dayPopup( ) {
 
     console.log(event.target.id)
-    if ( event.target.className === "padlock" ) return
+    if ( event.target.className === "padlock-icon" ) return
 
     let dayId = event.target.id
     let popup_title = document.getElementById('popup-title')
