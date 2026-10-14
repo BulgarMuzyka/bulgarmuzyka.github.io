@@ -101,20 +101,20 @@
         height: 40vw;
     }
     #popup-platki-live-bandcamp {
-        top: 19vh;
+        top: 15.5vh;
         width: 35vw;
         height: 35vw;
-        right: 7vw;
+        right: 6vw;
     }
     #popup-infobox-one {
-        font-size: 2.4vw;
-        width: 40vw;
+        font-size: 3vw;
+        width: 45vw;
         top: 15vw;
         left: 4vw;
     }
     #popup-infobox-two {
-        font-size: 2.4vw;
-        width: 30vw;
+        font-size: 3vw;
+        width: 31vw;
         top: 40vw;
         /*left: 3vw;*/
         left: 5vw;
