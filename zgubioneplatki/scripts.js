@@ -3,7 +3,7 @@ const popupTitles = {
     'second-day': 'Dzień drugi: Nuty do Zgubionych Płatków',
     'third-day': 'Dzień trzeci: Highlighty z urodzinowego streama',
     'fourth-day': 'Dzień czwarty: Nagranie z koncertu',
-    // 'fifth-day': 'Dzień piąty: Oficjalny Minecraft discpack',
+    'fifth-day': 'Dzień piąty: Oficjalny Minecraft discpack',
 
 }
 
