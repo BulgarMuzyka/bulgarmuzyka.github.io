@@ -3,7 +3,7 @@ const popupTitles = {
     'second-day': 'Dzień drugi: Nuty do Zgubionych Płatków',
     'third-day': 'Dzień trzeci: Highlighty z urodzinowego streama',
     'fourth-day': 'Dzień czwarty: Nagranie z koncertu',
-    'fifth-day': 'Dzień piąty: Oficjalny Minecraft discpack',
+    // 'fifth-day': 'Dzień piąty: Oficjalny Minecraft discpack',
 
 }
 
@@ -17,17 +17,17 @@ function dayPopup( ) {
     popup_title.innerText = popupTitles[dayId] ?? "undefined"
 
     let popup = document.getElementById("popup-window");
-    popup.style.display = "block";
+    popup.style.visibility = "visible";
     let popup_tint = document.getElementById("popup-tint");
-    popup_tint.style.display = "block";
+    popup_tint.style.visibility = "visible";
 }
 
 function hidePopup( ) {
 
     let popup = document.getElementById("popup-window");
-    popup.style.display = "none";
+    popup.style.visibility = "hidden";
     let popup_tint = document.getElementById("popup-tint");
-    popup_tint.style.display = "none";
+    popup_tint.style.visibility = "hidden";
 }
 
 function showPopup( buttonId ) {

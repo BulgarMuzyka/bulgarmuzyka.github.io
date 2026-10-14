@@ -13,7 +13,7 @@
     top: 0;
     bottom: 0;
 
-    display: none;
+    visibility: hidden;
 
     /*background: red;*/
     background: url("./img/platki popup bg.png") ;
@@ -23,10 +23,9 @@
 
 #popup-tint {
     position: absolute;
-    background: black;
-    opacity: 0.7;
+    background: rgba( 0, 0, 0, 0.7 );
     z-index: 3;
-    display: none;
+    visibility: hidden;
 }
 
 #popup-content {
@@ -45,8 +44,81 @@
     right: 0;
 
     font-size: 2.6vw;
+    font-family: "Caveat Brush", cursive;
     font-weight: bold;
 
+}
+#popup-infobox-one {
+    width: 29vw;
+    font-size: 1.3vw;
+    transform: rotate(-8deg);
+    top: 8vw;
+    left: 1.8vw;
+    z-index: 999;
+}
+
+.popup-infobox {
+    position: absolute;
+    font-family: "Arial", serif;
+    font-weight: bold;
+}
+
+#popup-infobox-two {
+    width: 29vw;
+    text-align: center;
+    font-size: 1.3vw;
+    right: 1.5vw;
+    top: 31vw;
+    transform: rotate(-4deg);
+}
+
+#popup-platki-live-bandcamp {
+    position: absolute;
+
+    transform: rotate(7deg);
+    right: 3vw;
+    top: 11vw;
+    z-index: 4;
+    width: 17vw;
+    height: 17vw;
+}
+
+#popup-platki-concert-yt {
+    position: absolute;
+    /*width: 1vw;*/
+    transform: rotate(3deg);
+    /*right: 3vw;*/
+    top: 19vw;
+    width: 23vw;
+    height: 13vw;
+    /*z-index: 4;*/
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    #popup-platki-concert-yt {
+        left: 5vw;
+        top: 45vh;
+        width: 70vw;
+        height: 40vw;
+    }
+    #popup-platki-live-bandcamp {
+        top: 19vh;
+        width: 35vw;
+        height: 35vw;
+        right: 7vw;
+    }
+    #popup-infobox-one {
+        font-size: 2.4vw;
+        width: 40vw;
+        top: 15vw;
+        left: 4vw;
+    }
+    #popup-infobox-two {
+        font-size: 2.4vw;
+        width: 30vw;
+        top: 40vw;
+        /*left: 3vw;*/
+        left: 5vw;
+    }
 }
 
 @media screen and (max-aspect-ratio: 1/1)  {
