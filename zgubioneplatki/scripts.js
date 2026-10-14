@@ -10,7 +10,7 @@ const popupTitles = {
 function dayPopup( ) {
 
     console.log(event.target.id)
-    if ( event.target.className === "padlock-icon" ) return
+    if (event.target.className === "padlock-icon") return
 
     let dayId = event.target.id
     let popup_title = document.getElementById('popup-title')
@@ -20,6 +20,15 @@ function dayPopup( ) {
     popup.style.visibility = "visible";
     let popup_tint = document.getElementById("popup-tint");
     popup_tint.style.visibility = "visible";
+
+    if (event.target.id !== "fourth-day") {
+        document.getElementById("popup-platki-live-bandcamp").style.visibility = "hidden";
+        document.getElementById("popup-platki-concert-yt").style.visibility = "hidden";
+
+    } else {
+        document.getElementById("popup-platki-live-bandcamp").style.visibility = "visible";
+        document.getElementById("popup-platki-concert-yt").style.visibility = "visible";
+    }
 }
 
 function hidePopup( ) {
@@ -28,6 +37,9 @@ function hidePopup( ) {
     popup.style.visibility = "hidden";
     let popup_tint = document.getElementById("popup-tint");
     popup_tint.style.visibility = "hidden";
+
+    document.getElementById("popup-platki-live-bandcamp").style.visibility = "hidden";
+    document.getElementById("popup-platki-concert-yt").style.visibility = "hidden";
 }
 
 function showPopup( buttonId ) {

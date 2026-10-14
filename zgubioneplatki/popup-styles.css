@@ -37,11 +37,12 @@
 }
 
 #popup-title {
-    position: relative;
+    position: absolute;
     text-align: center;
     margin: auto;
     left: 0;
     right: 0;
+    top: 5vw;
 
     font-size: 2.6vw;
     font-family: "Caveat Brush", cursive;
@@ -96,7 +97,7 @@
 @media screen and (max-aspect-ratio: 1/1)  {
     #popup-platki-concert-yt {
         left: 5vw;
-        top: 45vh;
+        top: 51vh;
         width: 70vw;
         height: 40vw;
     }
@@ -109,13 +110,13 @@
     #popup-infobox-one {
         font-size: 3vw;
         width: 45vw;
-        top: 15vw;
+        top: 17vw;
         left: 4vw;
     }
     #popup-infobox-two {
         font-size: 3vw;
-        width: 31vw;
-        top: 40vw;
+        width: 35vw;
+        top: 48vw;
         /*left: 3vw;*/
         left: 5vw;
     }
@@ -123,7 +124,7 @@
 
 @media screen and (max-aspect-ratio: 1/1)  {
     #popup-window {
-        width: 80vw;
+        width: 88vw;
         height: 90vh;
         min-height: 20vw;
         min-width: 20vw;
@@ -131,7 +132,9 @@
     }
 
     #popup-title {
-        top: 10px;
-        font-size: 5vw;
+        /*top: 10px;*/
+        top: 1vw;
+        font-size: 7vw;
+        line-height: 7vw;
     }
 }
