@@ -222,6 +222,18 @@
     top: 33vw;
     right: 0;
 }
+.day6info1 {
+    text-align: center;
+    top: 7vw;
+    transform: rotate(-15deg);
+    width: 20vw;
+    left: 3vw;
+}
+.day6info2 {
+    text-align: center;
+    top: 20vw;
+    left: 10vw;
+}
 
 
 .popup-infobox {
@@ -378,6 +390,19 @@
 @media screen and (max-aspect-ratio: 1/1)  {
     .minecraft-disc {
         width: 40vw;
+    }
+}
+
+/* Day 6 */
+.platki-cd {
+    width: 30vw;
+    transform: rotate(4deg);
+    right: -5vw;
+    top: 3vw;
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .platki-cd {
+        width: 80vw;
     }
 }
 
