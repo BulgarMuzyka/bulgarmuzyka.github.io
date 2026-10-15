@@ -4,7 +4,8 @@
     margin: auto;
     left: 0;
     right: 0;
-    width: 33%;
+    top: 3vw;
+    width: 28%;
     z-index: 2;
 
 }
@@ -50,7 +51,7 @@ body {
         height: 263vw;
     }
     .logo {
-        width: 65%
+        width: 60%
     }
 
     .logo-wrapper {
