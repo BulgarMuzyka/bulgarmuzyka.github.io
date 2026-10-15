@@ -60,4 +60,9 @@ body {
 }
 
 
+@font-face {
+    font-family: Mojangles; /* set name */
+    src: url("fonts/mojangles-v2.otf.woff2");
+}
+
 
