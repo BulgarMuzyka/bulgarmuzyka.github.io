@@ -10,6 +10,8 @@ const popupTitles = {
 function dayPopup( ) {
     bandcamp_iframe = document.getElementById("popup-platki-live-bandcamp");
     bandcamp_iframe.src = bandcamp_iframe.src;
+    bandcamp_iframe = document.getElementById("popup-platki-twitch-bandcamp");
+    bandcamp_iframe.src = bandcamp_iframe.src;
 
     // console.log(event.target.id)
     if (event.target.className === "padlock-icon") return

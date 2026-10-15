@@ -78,7 +78,7 @@
 @media screen and (max-aspect-ratio: 1/1)  {
     .popup-content {
         /*margin: 4vw;*/
-        border: red solid 1px;
+        /*border: red solid 1px;*/
         top: 18vw;
     }
     .popup-content > *:first-child {
@@ -96,7 +96,7 @@
     }
 }
 .popup-content > * {
-    border: blue solid 1px;
+    /*border: blue solid 1px;*/
 }
 
 
@@ -131,6 +131,22 @@
     top: 20vw;
     left: 0;
 }
+
+.day3info1 {
+    width: 25vw;
+    transform: rotate(-6deg);
+    top: 4vw;
+    left: 0;
+    text-align: center;
+}
+.day3info2 {
+    width: 27vw;
+    transform: rotate(9deg);
+    top: 20vw;
+    right: 0;
+    text-align: center;
+}
+
 .day4info1 {
     width: 29vw;
     transform: rotate(-8deg);
@@ -142,8 +158,37 @@
     text-align: center;
     right: 1.5vw;
     top: 28vw;
-
     transform: rotate(-4deg);
+}
+
+.day5info1 {
+    width: 31vw;
+    transform: rotate(-4deg);
+    top: 4vw;
+    left: 0;
+}
+.day5info2 {
+    text-align: center;
+    right: 2.6vw;
+    top: 6.5vw;
+
+    transform: rotate(4deg);
+}
+.day5info3 {
+    width: 20vw;
+    transform: rotate(3deg);
+    top: 22vw;
+    right: 10vw;
+}
+.day5info4 {
+    text-align: center;
+    top: 30vw;
+    right: 0;
+}
+.day5info5 {
+    text-align: center;
+    top: 33vw;
+    right: 0;
 }
 
 
@@ -177,7 +222,7 @@
 /*    font-weight: bold;*/
 /*}*/
 
-
+/* Day 1 */
 .platki-not-platki {
     width: 25vw;
     top: 2vw;
@@ -201,6 +246,24 @@
     height: 30vw;
 }
 
+/* Day 3 */
+.twitch-bandcamp {
+    transform: rotate(-7deg);
+
+    left: 2vw;
+    top: 15vw;
+
+    width: 15vw;
+    height: 15vw;
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .twitch-bandcamp {
+        height: 60vw;
+        width: 60vw;
+    }
+}
+
+/* Day 4 */
 .live-bandcamp {
     transform: rotate(7deg);
 
@@ -214,6 +277,30 @@
     .live-bandcamp {
         height: 60vw;
         width: 60vw;
+    }
+}
+
+/* Day 5 */
+.crafting {
+    width: 20vw;
+    transform: rotate(4deg);
+    right: 0;
+    top: 9vw;
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .crafting {
+        width: 60vw;
+    }
+}
+
+.minecraft-disc {
+    width: 18vw;
+    left: 0;
+    top: 12vw;
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .minecraft-disc {
+        width: 40vw;
     }
 }
 
