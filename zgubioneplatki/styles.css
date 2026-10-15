@@ -65,4 +65,17 @@ body {
     src: url("fonts/mojangles-v2.otf.woff2");
 }
 
+.generic-header {
+    font-family: Caveat Brush, cursive;
+    font-size: 5vw;
+    color: #424242;
+    text-align: center;
+    top:8vw;
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .generic-header {
+        font-size: 15vw;
+        top:8vw;
+    }
+}
 
