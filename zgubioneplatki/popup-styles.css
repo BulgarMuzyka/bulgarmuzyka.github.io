@@ -1,28 +1,45 @@
 #popup-window {
     position: fixed;
-    z-index: 4;
-
-    width: 50vw;
-    height: 50vh;
-    min-height: 40vw;
-    min-width: 40vw;
-
     margin: auto;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
 
-    visibility: hidden;
+    z-index: 4;
 
-    /*background: red;*/
+    width: 55vw;
+    height: 50vh;
+    min-height: 40vw;
+
+    overflow-y: clip;
+    overflow-x: clip;
+
+    visibility: hidden;
 
     border: 3px solid black;
 
     background: url("./img/platki popup bg.png") ;
     background-size: cover;
 
+    --current-day-id: "null";
+
 }
+@media screen and (max-aspect-ratio: 1/1)  {
+    #popup-window {
+        width: 88vw;
+        height: 75vh;
+        /*min-height: 20vw;*/
+        /*min-width: 20vw;*/
+        /*max-height: 130vw;*/
+
+        overflow-y: scroll;
+
+
+    }
+}
+
+
 
 #popup-tint {
     position: absolute;
@@ -31,20 +48,62 @@
     visibility: hidden;
 }
 
-#popup-content {
+
+
+
+.popup-content {
+
+    /*margin-top: 10vw;*/
+    /*position: relative;*/
+    position: absolute;
+    margin: auto;
+    /*margin: 4vw;*/
+    left: 3vw;
+    right: 3vw;
+
+
+
     display: flex;
+    flex-direction: column;
+    gap: 5vw;
 
 
-    height: 100%;
-    margin: 2vw;
 
-    /*margin-left: 20px;*/
-    /*margin-right: 20px;*/
-    /*margin-top: 20px;*/
+    height: auto;
+    min-height: max-content;
+    /*margin: 2vw;*/
+    align-items: center;
+    content-visibility: hidden;
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .popup-content {
+        /*margin: 4vw;*/
+        border: red solid 1px;
+        top: 18vw;
+    }
+    .popup-content > *:first-child {
+        margin-top: 3vw;
+    }
+    .popup-content > *:last-child {
+        margin-bottom: 3vw;
+    }
+
+
+
+    #popup-platki-concert-yt {
+        height: 45vw;
+        width: 80vw;
+    }
+}
+.popup-content > * {
+    border: blue solid 1px;
 }
 
+
+
+
 #popup-title {
-    position: absolute;
+    position: relative;
     text-align: center;
     margin: auto;
     left: 0;
@@ -55,125 +114,198 @@
     font-family: "Caveat Brush", cursive;
     font-weight: bold;
     line-height: 3.2vw;
-
-
 }
-#popup-infobox-one {
+
+
+
+
+
+.day4info1 {
     width: 29vw;
     font-size: 1.3vw;
     transform: rotate(-8deg);
-    top: 8vw;
-    left: 1.8vw;
+    top: 6vw;
+    left: 1vw;
     z-index: 999;
 }
+.day4info2 {
+    width: 29vw;
+    text-align: center;
+    font-size: 1.3vw;
+    right: 1.5vw;
+    top: 28vw;
+
+    transform: rotate(-4deg);
+}
+
 
 .popup-infobox {
     position: absolute;
     font-family: "Arial", serif;
     font-weight: bold;
+    /*visibility: hidden;*/
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+
+    .popup-infobox {
+        position: relative;
+        font-size: 3.8vw;
+        width: 100%;
+
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+
+        text-align: center;
+        transform: rotate(0deg);
+    }
 }
 
-#popup-infobox-two {
-    width: 29vw;
-    text-align: center;
-    font-size: 1.3vw;
-    right: 1.5vw;
-    top: 31vw;
-    transform: rotate(-4deg);
-}
+/*.popup-infobox {*/
+/*    position: absolute;*/
+/*    font-family: "Arial", serif;*/
+/*    font-weight: bold;*/
+/*}*/
 
-#popup-platki-live-bandcamp {
-    position: absolute;
 
+
+.live-bandcamp {
     transform: rotate(7deg);
-    right: 3vw;
-    top: 11vw;
-    z-index: 4;
+
+    right: 2vw;
+    top: 7vw;
+
     width: 17vw;
     height: 17vw;
 }
+@media screen and (max-aspect-ratio: 1/1)  {
+    .live-bandcamp {
+        height: 60vw;
+        width: 60vw;
+    }
+}
 
-#popup-platki-concert-yt {
-    position: absolute;
-    /*width: 1vw;*/
+
+
+.concert-yt {
     transform: rotate(3deg);
-    /*right: 3vw;*/
-    top: 19vw;
+    top: 15vw;
     width: 23vw;
     height: 13vw;
-    left: 2vw
-    /*z-index: 4;*/
+    left: 0;
 }
 @media screen and (max-aspect-ratio: 1/1)  {
-    #popup-platki-concert-yt {
-        position: relative;
-        transform: rotate(0deg);
-
-        font-size: 3.8vw;
-        width: 90%;
-        height: 43vw;
-        top: 26vw;
-
-        left:0;
-        right:0;
-        margin: auto;
-
-    }
-    #popup-platki-live-bandcamp {
-        position: relative;
-        transform: rotate(0deg);
-
-        width: 70vw;
-        height: 70vw;
-
-        top: 20vw;
-
-        left:0;
-        right:0;
-        margin: auto;
-
-    }
-    #popup-infobox-one {
-        position: relative;
-        transform: rotate(0deg);
-
-        font-size: 3.8vw;
-        text-align: center;
-        width: 90%;
-        top: 17vw;
-
-        left:0;
-        right:0;
-        margin: auto;
-
-    }
-    #popup-infobox-two {
-        position: relative;
-        transform: rotate(0deg);
-
-        font-size: 3.8vw;
-        width: 90%;
-        top: 32vw;
-
-        left:0;
-        right:0;
-        bottom: 5vw;
-        margin: auto;
+    .concert-yt {
+        height: 45vw;
+        width: 80vw;
     }
 }
 
+
+/* General iframe rules */
+.popup-iframe {
+    position: absolute;
+}
 @media screen and (max-aspect-ratio: 1/1)  {
-    #popup-window {
-        width: 88vw;
-        height: 75vh;
-        min-height: 20vw;
-        min-width: 20vw;
-        max-height: 130vw;
+    .popup-iframe {
+        position: relative;
 
-        overflow-y: scroll;
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+        transform: rotate(0deg);
     }
+}
 
-    #popup-content {
+/*#popup-stream-concert-yt {*/
+
+/*    position: relative;*/
+/*    transform: rotate(3deg);*/
+/*    top: 19vw;*/
+/*    width: 23vw;*/
+/*    height: 13vw;*/
+/*    left: 2vw*/
+/*}*/
+
+/*@media screen and (max-aspect-ratio: 1/1)  {*/
+/*    #popup-platki-concert-yt {*/
+/*        position: relative;*/
+/*        transform: rotate(0deg);*/
+
+/*        font-size: 3.8vw;*/
+/*        width: 90%;*/
+/*        height: 43vw;*/
+/*        top: 26vw;*/
+
+/*        left:0;*/
+/*        right:0;*/
+/*        margin: auto;*/
+
+/*    }*/
+/*    #popup-platki-stream-yt {*/
+/*        position: relative;*/
+/*        transform: rotate(0deg);*/
+
+/*        font-size: 3.8vw;*/
+/*        width: 90%;*/
+/*        height: 43vw;*/
+/*        top: 26vw;*/
+
+/*        left:0;*/
+/*        right:0;*/
+/*        margin: auto;*/
+
+/*    }*/
+
+/*    #popup-platki-live-bandcamp {*/
+/*        position: relative;*/
+/*        transform: rotate(0deg);*/
+
+/*        width: 70vw;*/
+/*        height: 70vw;*/
+
+/*        top: 20vw;*/
+
+/*        left:0;*/
+/*        right:0;*/
+/*        margin: auto;*/
+
+/*    }*/
+/*    #popup-infobox-one {*/
+/*        position: relative;*/
+/*        transform: rotate(0deg);*/
+
+/*        font-size: 3.8vw;*/
+/*        text-align: center;*/
+/*        width: 90%;*/
+/*        top: 17vw;*/
+
+/*        left:0;*/
+/*        right:0;*/
+/*        margin: auto;*/
+
+/*    }*/
+/*    #popup-infobox-two {*/
+/*        position: relative;*/
+/*        transform: rotate(0deg);*/
+
+/*        font-size: 3.8vw;*/
+/*        width: 90%;*/
+/*        top: 32vw;*/
+
+/*        left:0;*/
+/*        right:0;*/
+/*        bottom: 5vw;*/
+/*        margin: auto;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-aspect-ratio: 1/1)  {
+
+
+    .popup-content {
         height: auto;
         flex-direction: column;
     }

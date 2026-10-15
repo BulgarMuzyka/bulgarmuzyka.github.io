@@ -8,8 +8,10 @@ const popupTitles = {
 }
 
 function dayPopup( ) {
+    bandcamp_iframe = document.getElementById("popup-platki-live-bandcamp");
+    bandcamp_iframe.src = bandcamp_iframe.src;
 
-    console.log(event.target.id)
+    // console.log(event.target.id)
     if (event.target.className === "padlock-icon") return
 
     let dayId = event.target.id
@@ -21,14 +23,33 @@ function dayPopup( ) {
     let popup_tint = document.getElementById("popup-tint");
     popup_tint.style.visibility = "visible";
 
-    if (event.target.id !== "fourth-day") {
-        document.getElementById("popup-platki-live-bandcamp").style.visibility = "hidden";
-        document.getElementById("popup-platki-concert-yt").style.visibility = "hidden";
 
-    } else {
-        document.getElementById("popup-platki-live-bandcamp").style.visibility = "visible";
-        document.getElementById("popup-platki-concert-yt").style.visibility = "visible";
-    }
+    let popup_content = document.getElementById(`popup-${dayId}`);
+    console.log(popup_content)
+    console.log(popup_content)
+
+
+
+    // popup_content.style.visibility = "visible";
+    popup_content.style.contentVisibility = "visible";
+    popup.style.setProperty("--current-day-id", dayId);
+    console.log(popup)
+    //
+    // if (event.target.id !== "third-day") {
+    //     document.getElementById("popup-platki-stream-yt").style.visibility = "hidden";
+    // } else {
+    //     document.getElementById("popup-platki-stream-yt").style.visibility = "visible";
+    // }
+    //
+    // if (event.target.id !== "fourth-day") {
+    //     document.getElementById("popup-platki-live-bandcamp").style.visibility = "hidden";
+    //     document.getElementById("popup-platki-concert-yt").style.visibility = "hidden";
+    // } else {
+    //     document.getElementById("popup-platki-live-bandcamp").style.visibility = "visible";
+    //     document.getElementById("popup-platki-concert-yt").style.visibility = "visible";
+    // }
+
+    // if (event.target.id !== "fifth-day") {}
 }
 
 function hidePopup( ) {
@@ -38,8 +59,14 @@ function hidePopup( ) {
     let popup_tint = document.getElementById("popup-tint");
     popup_tint.style.visibility = "hidden";
 
-    document.getElementById("popup-platki-live-bandcamp").style.visibility = "hidden";
-    document.getElementById("popup-platki-concert-yt").style.visibility = "hidden";
+    // document.getElementById("popup-platki-live-bandcamp").style.visibility = "hidden";
+    // document.getElementById("popup-platki-concert-yt").style.visibility = "hidden";
+    // document.getElementById("popup-platki-stream-yt").style.visibility = "hidden";
+
+    const dayId = window.getComputedStyle(popup).getPropertyValue('--current-day-id');
+    // console.log(dayId);
+    document.getElementById(`popup-${dayId}`).style.contentVisibility = "hidden";
+    // document.getElementById(`popup-${dayId}`).style.display = "none";
 }
 
 function showPopup( buttonId ) {
