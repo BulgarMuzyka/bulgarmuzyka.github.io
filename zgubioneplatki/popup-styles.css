@@ -132,6 +132,38 @@
     left: 0;
 }
 
+.day2info1 {
+    /*width: 50vw;*/
+    text-align: center;
+    transform: rotate(4deg);
+    top: 8vw;
+    left: 0;
+}
+.day2info2 {
+    /*font-size: 200%;*/
+    width: 20vw;
+    text-align: center;
+    transform: rotate(3deg);
+    top: 10vw;
+    left: 5vw;
+}
+.day2info3 {
+    /*font-size: 200%;*/
+    width: 20vw;
+    text-align: center;
+    transform: rotate(3deg);
+    top: 18vw;
+    left: 4vw;
+}
+.day2info4 {
+    /*font-size: 200%;*/
+    width: 20vw;
+    text-align: center;
+    transform: rotate(-9deg);
+    top: 25vw;
+    right: 1vw;
+}
+
 .day3info1 {
     width: 25vw;
     transform: rotate(-6deg);
@@ -156,9 +188,9 @@
 .day4info2 {
     width: 29vw;
     text-align: center;
-    right: 1.5vw;
+    right: 0;
     top: 28vw;
-    transform: rotate(-4deg);
+    transform: rotate(-6deg);
 }
 
 .day5info1 {
@@ -233,20 +265,50 @@
         width: 60vw;
     }
 }
-
 .original-spotify {
-    height: 10vw;
-    width: 40vw;
+    /*height: 10vw;*/
+    /*width: 40vw;*/
     top: 25vw;
     transform: rotate(1deg);
     left: 0;
+    /*block-size: 50%;*/
 }
 @media screen and (max-aspect-ratio: 1/1)  {
-    width: 40vw;
-    height: 30vw;
+    /*block-size: 100%;*/
+    /*width: 80vw;*/
+    /*width: 100%;*/
+    height: 100%;
+    /*width: 40vw;*/
+    /*height: 30vw;*/
+}
+
+/* Day 2 */
+.songster-logo {
+    width: 15vw;
+    left: 6vw;
+    top: 20vw;
+    transform: rotate(-9deg);
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .songster-logo {
+        width: 40vw;
+    }
 }
 
 /* Day 3 */
+.stream-yt {
+    transform: rotate(3deg);
+    top: 4vw;
+    width: 23vw;
+    height: 13vw;
+    right: 0;
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .stream-yt {
+        height: 45vw;
+        width: 80vw;
+    }
+}
 .twitch-bandcamp {
     transform: rotate(-7deg);
 
@@ -265,6 +327,19 @@
 
 
 /* Day 4 */
+.concert-yt {
+    transform: rotate(3deg);
+    top: 15vw;
+    width: 23vw;
+    height: 13vw;
+    left: 0;
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .concert-yt {
+        height: 45vw;
+        width: 80vw;
+    }
+}
 .live-bandcamp {
     transform: rotate(7deg);
 
@@ -280,6 +355,7 @@
         width: 60vw;
     }
 }
+
 
 /* Day 5 */
 .crafting {
@@ -307,19 +383,7 @@
 
 
 
-.concert-yt {
-    transform: rotate(3deg);
-    top: 15vw;
-    width: 23vw;
-    height: 13vw;
-    left: 0;
-}
-@media screen and (max-aspect-ratio: 1/1)  {
-    .concert-yt {
-        height: 45vw;
-        width: 80vw;
-    }
-}
+
 
 
 /* General iframe and img rules */
