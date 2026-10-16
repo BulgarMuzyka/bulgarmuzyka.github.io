@@ -234,6 +234,22 @@
     top: 20vw;
     left: 10vw;
 }
+.day7info2 {
+    top: 10vw;
+    left: 10vw;
+}
+.day7info3 {
+    top: 13vw;
+    left: 10vw;
+}
+.day7info4 {
+    top: 16vw;
+    left: 10vw;
+}
+.day7info5 {
+    top: 19vw;
+    left: 10vw;
+}
 
 
 .popup-infobox {
@@ -402,6 +418,19 @@
 }
 @media screen and (max-aspect-ratio: 1/1)  {
     .platki-cd {
+        width: 80vw;
+    }
+}
+
+/* Day 7 */
+.plakat {
+    width: 16vw;
+    transform: rotate(4deg);
+    right: 0;
+    top: 3vw;
+}
+@media screen and (max-aspect-ratio: 1/1)  {
+    .plakat {
         width: 80vw;
     }
 }
