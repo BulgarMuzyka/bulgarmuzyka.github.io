@@ -5,7 +5,7 @@ const popupTitles = {
     'fourth-day': 'Dzień czwarty: Nagranie z koncertu',
     'fifth-day': 'Dzień piąty: Oficjalny Minecraft discpack',
     'sixth-day': 'Dzień szósty: Płyta CD',
-
+    'seventh-day': 'Dzień siódmy: Trasa koncertowa'
 }
 
 function dayPopup( ) {
